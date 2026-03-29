@@ -1,3 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GLOBAL */
+body {
+  @apply bg-pink-50 text-gray-800;
+}
+
+/* NAVBAR */
+.navbar {
+  @apply flex justify-between items-center px-6 py-4 shadow-md bg-white;
+}
+
+.logo {
+  @apply text-xl font-bold text-pink-600;
+}
+
+.nav-links {
+  @apply hidden md:flex gap-6;
+}
+
+.nav-link {
+  @apply hover:text-pink-500;
+}
+
+.hamburger {
+  @apply md:hidden text-2xl;
+}
+
+.mobile-menu {
+  @apply md:hidden flex flex-col gap-4 px-6 pb-4 bg-white shadow;
+}
+
+/* BUTTONS */
+.btn-primary {
+  @apply bg-pink-600 text-white px-6 py-3 rounded-xl hover:bg-pink-700;
+}
+
+.btn-whatsapp {
+  @apply bg-green-500 text-white px-6 py-3 rounded-xl hover:bg-green-600 inline-block;
+}
+
+/* HERO */
+.hero {
+  @apply text-center py-20 px-6 bg-pink-100;
+}
+
+.hero-title {
+  @apply text-4xl md:text-5xl font-bold;
+}
+
+.hero-text {
+  @apply mt-4 text-gray-600 max-w-xl mx-auto;
+}
+
+/* SECTIONS */
+.section {
+  @apply py-16 px-6;
+}
+
+.section-light {
+  @apply py-16 px-6 bg-white;
+}
+
+.section-pink {
+  @apply py-16 px-6 bg-pink-100 text-center;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-center mb-10;
+}
+
+/* GRID */
+.grid-3 {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+/* CARD */
+.card {
+  @apply bg-white rounded-xl shadow overflow-hidden;
+}
+
+.card-img {
+  @apply w-full h-48 object-cover;
+}
+
+.card-body {
+  @apply p-4;
+}
+
+.card-title {
+  @apply font-semibold text-lg;
+}
+
+.card-text {
+  @apply text-gray-600 mt-2;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+  @apply p-6 bg-pink-50 rounded-xl shadow;
+}
+
+.testimonial-text {
+  @apply text-gray-700;
+}
+
+.testimonial-name {
+  @apply mt-4 font-semibold;
+}
+
+/* FOOTER */
+.footer {
+  @apply text-center py-6 bg-gray-900 text-gray-400;
+}
